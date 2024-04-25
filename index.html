@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Домашка по формам</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="form">
+        <form action="#" id="form" class="form__body">
+          <h1 class="form__title">Отправка данных на почту</h1>
+          <div class="form__item">
+            <label for="formName" class="form__label">Имя*:</label>
+            <input
+              id="formName"
+              type="text"
+              name="name"
+              class="form__input _req"
+            />
+          </div>
+          <div class="form__item">
+            <label for="formEmail" class="form__label">Email*:</label>
+            <input
+              id="formEmail"
+              type="text"
+              name="email"
+              class="form__input _req _email"
+            />
+          </div>
+          <div class="form__item">
+            <div class="form__label">Левша или правша</div>
+            <div class="otions">
+              <div class="options__item">
+                <input
+                  id="formRightHanded"
+                  checked
+                  type="radio"
+                  value="right"
+                  name="hand"
+                  class="otions__input"
+                />
+                <label for="formRightHanded" class="otions__label"
+                  ><span>Правша</span></label
+                >
+              </div>
+              <div class="options__item">
+                <input
+                  id="formLeftHanded"
+                  type="radio"
+                  value="left"
+                  name="hand"
+                  class="otions__input"
+                />
+                <label for="formLeftHanded" class="otions__label"
+                  ><span>Левша</span></label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="form__item">
+            <label for="formMessage" class="form__label">Сообщение:</label>
+            <textarea
+              name="message"
+              id="formMessage"
+              class="form__input"
+            ></textarea>
+          </div>
+          <div class="form__item">
+            <label class="form__label">Возраст:</label>
+            <select name="age" class="select">
+              <option value="от 18 до 25" selected="selected">
+                от 18 до 25
+              </option>
+              <option value="от 26 до 35">от 26 до 35</option>
+              <option value="от 36 до 45">от 36 до 45</option>
+              <option value="от 46">от 46</option>
+            </select>
+          </div>
+          <div class="form__item">
+            <div class="form__label">Прикрепить фото</div>
+            <div class="file">
+              <div class="file__item">
+                <input
+                  id="formImage"
+                  accept=".jpg, .png, .gif"
+                  type="file"
+                  name="image"
+                  class="file__input"
+                />
+                <div class="file__button">Выбрать</div>
+              </div>
+              <div id="formPreview" class="file__preview"></div>
+            </div>
+          </div>
+          <div class="form__item">
+            <div class="checkbox">
+              <input
+                id="formAgreement"
+                checked
+                type="checkbox"
+                name="agreement"
+                class="checkbox__input"
+              />
+              <label for="formAgreement" class="checkbox__label _req"
+                ><span
+                  >Я даю свое согласие на обработку персональных данных в
+                  сщщтветствии с <a href="#">Условиями</a>*</span
+                ></label
+              >
+            </div>
+          </div>
+          <button class="form__button" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
